@@ -2,101 +2,114 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Nagarajan KC | Digital Marketing Portfolio</title>
+<title>Nagarajan KC | Digital Marketer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 :root{
-  --purple:#6a1b9a;
-  --light-purple:#f3e5f5;
-  --dark:#1f1f1f;
+  --primary:#6a1b9a;
+  --primary-dark:#4a148c;
+  --bg:#f5f3fa;
+  --white:#ffffff;
+  --text:#333;
 }
 
 *{
-  box-sizing:border-box;
   margin:0;
   padding:0;
+  box-sizing:border-box;
   font-family: "Segoe UI", sans-serif;
 }
 
 body{
-  background:#f7f7fb;
-  color:#333;
-  line-height:1.6;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
 }
 
+/* HEADER */
 header{
-  background:linear-gradient(135deg,#6a1b9a,#8e24aa);
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
   color:white;
-  padding:70px 20px;
   text-align:center;
+  padding:80px 20px;
 }
 
 header h1{
-  font-size:42px;
+  font-size:44px;
 }
 
 header p{
-  font-size:18px;
+  font-size:20px;
   margin-top:10px;
 }
 
+/* NAVIGATION */
 nav{
-  background:white;
+  background:var(--white);
   padding:15px;
   text-align:center;
-  box-shadow:0 4px 10px rgba(0,0,0,0.08);
   position:sticky;
   top:0;
   z-index:10;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 nav a{
   margin:0 15px;
   text-decoration:none;
-  color:var(--purple);
+  color:var(--primary);
   font-weight:600;
+  padding:8px 12px;
+  border-radius:6px;
+  transition:0.3s;
 }
 
+nav a:hover{
+  background:var(--primary);
+  color:white;
+}
+
+/* SECTION */
 section{
   max-width:1100px;
   margin:auto;
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
 h2{
-  color:var(--purple);
+  color:var(--primary);
   margin-bottom:25px;
   font-size:28px;
 }
 
+/* CARD / BLOCK */
+.card{
+  background:var(--white);
+  padding:30px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom:25px;
+}
+
+/* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:25px;
 }
 
-.card{
-  background:white;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 8px 25px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
+/* LIST */
 ul{
   padding-left:20px;
 }
 
+/* FOOTER */
 footer{
-  background:#2c2c2c;
+  background:#1f1f1f;
   color:white;
   text-align:center;
-  padding:25px;
+  padding:30px 20px;
 }
 </style>
 </head>
@@ -105,7 +118,7 @@ footer{
 
 <header>
   <h1>Nagarajan KC</h1>
-  <p>Digital Marketing Fresher | SEO | Social Media Marketing</p>
+  <p>Digital Marketer</p>
 </header>
 
 <nav>
@@ -114,7 +127,6 @@ footer{
   <a href="#experience">Experience</a>
   <a href="#projects">Projects</a>
   <a href="#education">Education</a>
-  <a href="#certifications">Certifications</a>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -133,10 +145,9 @@ brand growth using data-driven and creative strategies.
 <section id="skills">
 <h2>Technical Skills</h2>
 <div class="grid">
-<div class="card">SEO (On-page & Off-page)</div>
-<div class="card">Backlink Building (White-hat)</div>
+<div class="card">Search Engine Optimization</div>
 <div class="card">Social Media Marketing</div>
-<div class="card">Email Marketing</div>
+<div class="card">E-mail Marketing</div>
 <div class="card">Performance Marketing</div>
 <div class="card">PPC (Pay-Per-Click)</div>
 <div class="card">Google Analytics</div>
@@ -146,14 +157,14 @@ brand growth using data-driven and creative strategies.
 <section id="experience">
 <h2>Internship Experience</h2>
 <div class="card">
-<h3>Digital Marketing Executive – Izeon Innovative Pvt Ltd</h3>
-<p><strong>Duration:</strong> 2 Months | Chennai</p>
+<h3>Digital Marketing Executive – Izeon Innovative Private Limited</h3>
+<p><strong>Duration:</strong> 2 Months</p>
 <ul>
 <li>Managed and optimized social media platforms to improve brand visibility</li>
 <li>Increased Instagram followers by 150+ organically within 2 months</li>
 <li>Created and submitted 2000+ SEO backlinks using white-hat techniques</li>
-<li>Assisted in on-page and off-page SEO activities</li>
-<li>Performed keyword research and competitor analysis</li>
+<li>Assisted in On-page and Off-page SEO activities</li>
+<li>Performed basic keyword research and competitor analysis</li>
 <li>Gained real-time exposure to digital marketing workflows and tools</li>
 </ul>
 </div>
@@ -167,23 +178,23 @@ brand growth using data-driven and creative strategies.
 <h3>Branding – Crispy Yum</h3>
 <p>
 Executed a complete branding project focusing on visual identity and traditional
-South Indian snack positioning.
+South Indian snacks.
 </p>
 </div>
 
 <div class="card">
 <h3>SEO Audit – NalamOrganic</h3>
 <p>
-Performed a complete SEO audit identifying issues like missing H1/H2 tags,
-non-optimized content, and keyword gaps. Delivered a detailed improvement report.
+Performed a complete SEO audit identifying missing H1/H2 tags, lorem ipsum content,
+and lack of keyword-optimized headings. Prepared a detailed SEO improvement report.
 </p>
 </div>
 
 <div class="card">
 <h3>Social Media Calendar – Crispy Yum</h3>
 <p>
-Created a structured content calendar focusing on consistent messaging,
-audience engagement, and online visibility.
+Created a social media content calendar focusing on consistent brand messaging,
+audience engagement, and increased online visibility.
 </p>
 </div>
 
@@ -194,17 +205,10 @@ audience engagement, and online visibility.
 <h2>Education</h2>
 <div class="card">
 <p>
-<strong>B.Com (corporate secretaryship)</strong><br>
-Government Arts College – Alagappa University<br>
-2021 – 2024
+<strong>B.Com (Computer Science)</strong><br>
+2021 – 2024<br>
+Government Arts College, Alagappa University
 </p>
-</div>
-</section>
-
-<section id="certifications">
-<h2>Certifications</h2>
-<div class="card">
-<p>Full Stack Digital Marketing – Web D School</p>
 </div>
 </section>
 
@@ -214,8 +218,7 @@ Government Arts College – Alagappa University<br>
 <p>
 📍 Saidapet, Chennai<br>
 📧 nagarajankc2004@gmail.com<br>
-📞 9342870117<br>
-🌐 LinkedIn: https://linkedin.com/in/yourprofile
+📞 9342870117
 </p>
 </div>
 </section>
